@@ -1,0 +1,21 @@
+FROM python:3.12.2-alpine3.19
+
+WORKDIR /usr/src/app
+
+COPY . ./bot
+
+RUN apk update \
+    && apk add --no-cache gcc musl-dev postgresql-dev libffi-dev make postgresql-client \
+    && rm -rf /home/appuser/.cache \
+    && rm -rf /usr/src/app/{__pycache__,admin} \
+    && adduser -D appuser \
+    && chown -R appuser:appuser .
+
+RUN pip install -r ../.requirements.txt
+
+
+USER appuser
+
+CMD alembic upgrade head && \
+    pybabel compile -d bot/locales && \
+    python -m bot

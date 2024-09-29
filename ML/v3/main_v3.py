@@ -119,7 +119,7 @@ async def predict_sentiment(request: Request):
     best_index = cosine_scores.argmax().item()
 
     # Установка порога сходства
-    threshold = 0.5  # Настройте это значение на основе ваших данных
+    threshold = 0.5
 
     if best_score >= threshold:
         # Получение соответствующего вопроса из БЗ
@@ -143,6 +143,6 @@ async def predict_sentiment(request: Request):
     return response
 
 if __name__ == "__main__":
-    host = "0.0.0.0"  # Сконфигурируйте host согласно настройкам вашего сервера.
-    port = 8000
+    host = "0.0.0.0"
+    port = 8003
     uvicorn.run(app, host=host, port=port)

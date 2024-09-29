@@ -1,0 +1,47 @@
+# English translations for messages..
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the messages. project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: messages. VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-01-15 12:58+0400\n"
+"PO-Revision-Date: 2024-01-14 14:51+0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: kz\n"
+"Language-Team: kz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+msgid "language command"
+msgstr "Тілді таңдаңыз 🌐"
+
+msgid "language selected"
+msgstr "Тіл таңдалды ✅\n Тілді өзгерту үшін /start басыңыз"
+
+
+msgid "start command"
+msgstr "Бастау 🚀"
+
+msgid "start"
+msgstr "Мұнда сұрағыңызды бір хабарлама түрінде жазыңыз. Біздің көмекші жауап береді! 👇"
+
+msgid "pending"
+msgstr "⌛ Күту..."
+
+msgid "media warning"
+msgstr "⚠️ Ескерту! Сіз жіберген медиафайлдар өңделмейді. Жауап медиафайлдарсыз дәл болмауы мүмкін."
+
+msgid "no text error"
+msgstr "❌ Қате. Мәтін жоқ ❌"
+
+msgid "pending already"
+msgstr "😅 Ой... Сіздің жауапсыз сұрағыңыз бар."
+
+msgid "rate set success"
+msgstr "Баға {rate} сәтті қойылды"

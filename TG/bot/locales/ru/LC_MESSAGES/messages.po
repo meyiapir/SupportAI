@@ -1,0 +1,46 @@
+# English translations for messages..
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the messages. project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: messages. VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-01-15 12:58+0400\n"
+"PO-Revision-Date: 2024-01-14 14:51+0400\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+msgid "language command"
+msgstr "Выберите язык 🌐"
+
+msgid "language selected"
+msgstr "Язык выбран ✅\n Нажмите /start, чтобы язык изменился"
+
+msgid "start command"
+msgstr "Начать 🚀"
+
+msgid "start"
+msgstr "Напишите ваш вопрос одним сообщением здесь. Наш помощник ответит вам! 👇"
+
+msgid "pending"
+msgstr "⌛ Ожидание..."
+
+msgid "media warning"
+msgstr "⚠️ Внимание! Медиафайлы, которые вы отправили, не будут обработаны. Ответ может быть неточным без учета медиафайлов."
+
+msgid "no text error"
+msgstr "❌ Ошибка. Текст отсутствует ❌"
+
+msgid "pending already"
+msgstr "😅 Ой... У вас уже есть неотвеченный вопрос."
+
+msgid "rate set success"
+msgstr "Оценка {rate} успешно присвоена"

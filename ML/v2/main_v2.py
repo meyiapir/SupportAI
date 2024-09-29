@@ -42,7 +42,7 @@ def preprocess_question(question):
     if len(processed_question.split()) > 128:
         # Отключить суммаризацию, если она ухудшает качество
         # processed_question = summarize_text(processed_question)
-        pass  # Удалите или закомментируйте эту строку, если хотите использовать суммаризацию
+        pass
     return processed_question
 
 # Загрузка модели и данных при старте приложения
@@ -137,6 +137,6 @@ async def predict_sentiment(request: Request):
     return response
 
 if __name__ == "__main__":
-    host = "0.0.0.0"  # Сконфигурируйте host согласно настройкам вашего сервера.
-    port = 8001
+    host = "0.0.0.0"
+    port = 8002
     uvicorn.run(app, host=host, port=port)
