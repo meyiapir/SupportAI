@@ -4,7 +4,7 @@ from datetime import datetime
 
 from sqlalchemy.orm import Mapped, mapped_column
 
-from bot.database.models.base import Base, created_at, str_pk
+from sender.database.models.base import Base, created_at, str_pk
 
 
 class UserModel(Base):

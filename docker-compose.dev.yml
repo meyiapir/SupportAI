@@ -32,22 +32,22 @@ services:
     volumes:
       - ./TG/sender:/usr/src/app/sender
 
-  worker-api:
-    build:
-      context: .
-      dockerfile: ./Dockerfile.v1
-    restart: no
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
-    networks:
-      - app
-    depends_on:
-      - postgres
-      - redis
-    volumes:
-      - ./ML/v1:/usr/src/app/v1
+#  worker-api:
+#    build:
+#      context: .
+#      dockerfile: ./Dockerfile.v1
+#    restart: no
+#    ports:
+#      - "8000:8000"
+#    env_file:
+#      - .env
+#    networks:
+#      - app
+#    depends_on:
+#      - postgres
+#      - redis
+#    volumes:
+#      - ./ML/v1:/usr/src/app/v1
 
   postgres:
     image: postgres:14-alpine

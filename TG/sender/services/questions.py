@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import update
-from bot.database.models import QuestionModel
+from sender.database.models import QuestionModel
 
 
 async def add_question(

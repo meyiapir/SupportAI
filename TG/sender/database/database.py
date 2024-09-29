@@ -6,7 +6,7 @@ from asyncpg import Connection
 from sqlalchemy.engine.url import URL
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
 
-from bot.core.config import settings
+from sender.core.config import settings
 
 
 class CConnection(Connection):

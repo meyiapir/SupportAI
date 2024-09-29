@@ -14,7 +14,7 @@ from sender.services.questions import add_question
 from sender.utils.locales import translate
 
 
-core_api = CoreAPI('https://ba8e-46-17-106-15.ngrok-free.app')
+core_api = CoreAPI('http://host.docker.internal:8000')
 
 
 async def process_message(message: aio_pika.IncomingMessage):
@@ -71,6 +71,7 @@ async def consume():
 
 
 if __name__ == "__main__":
+    print("Starting...")
     try:
         asyncio.run(consume())
     except KeyboardInterrupt:

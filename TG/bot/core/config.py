@@ -29,7 +29,7 @@ class BotSettings(EnvBaseSettings):
 
 
 BOT_DIR = str(Path(__file__).absolute().parent.parent)
-LOCALES_DIR = f"{BOT_DIR}\locales"
+LOCALES_DIR = f"{BOT_DIR}/locales"
 I18N_DOMAIN = "messages"
 LANGUAGES = os.listdir(LOCALES_DIR)
 

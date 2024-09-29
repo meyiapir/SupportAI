@@ -3,7 +3,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.utils.i18n.core import I18n
 
-from bot.core.config import settings
+from sender.core.config import settings
 
 token = settings.BOT_TOKEN
 

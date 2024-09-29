@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from sqlalchemy.orm import Mapped, mapped_column
 
-from bot.database.models.base import Base, created_at, universal_id
+from sender.database.models.base import Base, created_at, universal_id
 
 
 class QuestionModel(Base):
