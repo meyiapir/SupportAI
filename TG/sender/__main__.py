@@ -35,12 +35,20 @@ async def process_message(message: aio_pika.IncomingMessage):
             await bot.send_message(user_id, _('api error'))
             return
 
-        await bot.send_message(user_id, answer.get('answer'))
+
+        answer_text = f"{answer.get('answer')}"
+
+        if answer.get('class_1') != '':
+            answer_text += f"\n\nКласс 1: {answer.get('class_1')}"
+        if answer.get('class_2') != '':
+            answer_text += f"\nКласс 2: {answer.get('class_2')}"
+
+        await bot.send_message(user_id, answer_text)
 
         async with sessionmaker() as session:
             new_question = await add_question(session, user_id, message_json.get('question'), answer.get('answer'))
 
-        await bot.send_message(user_id, _('rate'), reply_markup=rate_keyboard(task_id=new_question.id))
+        # await bot.send_message(user_id, _('rate'), reply_markup=rate_keyboard(task_id=new_question.id))
 
         await asyncio.sleep(1)
         print(f" [x] Done processing message: {message.body.decode()}")
