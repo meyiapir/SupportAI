@@ -11,7 +11,7 @@ RUN apk update \
     && adduser -D appuser \
     && chown -R appuser:appuser .
 
-RUN pip install -r ../.requirements.txt
+RUN pip install -r ./sender/requirements.txt
 
 USER appuser
 

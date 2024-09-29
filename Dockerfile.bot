@@ -2,7 +2,7 @@ FROM python:3.12.2-alpine3.19
 
 WORKDIR /usr/src/app
 
-COPY . ./bot
+COPY ./TG/bot .
 
 RUN apk update \
     && apk add --no-cache gcc musl-dev postgresql-dev libffi-dev make postgresql-client \
@@ -11,7 +11,7 @@ RUN apk update \
     && adduser -D appuser \
     && chown -R appuser:appuser .
 
-RUN pip install -r ../.requirements.txt
+RUN pip install -r requirements.txt
 
 
 USER appuser

@@ -1,0 +1,16 @@
+pydantic-settings==2.5.2
+SQLAlchemy==2.0.35
+aiogram==3.13.1
+redis==5.0.8
+loguru==0.7.2
+asyncpg==0.29.0
+orjson==3.10.7
+cachetools==5.5.0
+babel==2.16.0
+alembic==1.13.1
+aio-pika==9.4.3
+requests==2.32.3
+fastapi
+pydantic
+uvicorn
+pandas

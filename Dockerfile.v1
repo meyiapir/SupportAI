@@ -1,0 +1,18 @@
+FROM python:3.12.2-alpine3.19
+
+WORKDIR /usr/src/app
+
+COPY ./ML/v1 .
+
+EXPOSE 8000
+
+RUN apk update rm -rf /home/appuser/.cache \
+    && rm -rf /usr/src/app/{__pycache__,admin} \
+    && adduser -D appuser \
+    && chown -R appuser:appuser .
+
+RUN pip install -r requirements.txt
+
+USER appuser
+
+CMD python main.py

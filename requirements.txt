@@ -10,3 +10,8 @@ babel==2.16.0
 alembic==1.13.1
 aio-pika==9.4.3
 requests==2.32.3
+fastapi
+pydantic
+uvicorn
+pandas
+sentence_transformers
