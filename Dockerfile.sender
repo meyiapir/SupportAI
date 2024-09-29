@@ -15,4 +15,5 @@ RUN pip install -r ./sender/requirements.txt
 
 USER appuser
 
-CMD python -m sender
+CMD pybabel compile -d sender/locales && \
+    python -m sender

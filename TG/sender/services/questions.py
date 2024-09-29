@@ -14,7 +14,7 @@ async def add_question(
         user_id=user_id,
         question=question,
         answer=answer,
-        user_rate=None,  # Initial user rate set to 0 or default
+        user_rate=0,  # Initial user rate set to 0 or default
     )
 
     session.add(new_question)
